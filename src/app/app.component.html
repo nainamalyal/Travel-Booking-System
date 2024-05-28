@@ -1,0 +1,28 @@
+<div class="navbar">
+  <img src="assets/SairKaro.png" alt="Logo" class="logo">
+  <h2 class="title">Sair Karo</h2>
+  
+  <nav class="nav-links">
+    <a class="nav-link" routerLink="/home">Home</a>
+    <div class="nav-dropdown">
+      <a class="nav-link">Book</a>
+      <div class="dropdown-content">
+        <a class="dropdown-item" routerLink="/bookings/train">Train</a>
+        <a class="dropdown-item" routerLink="/bookings/flight">Flight</a>
+        <a class="dropdown-item" routerLink="/bookings/buses">Buses</a>
+      </div>
+    </div>
+    <a class="nav-link" routerLink="/myBookings">My Bookings</a>
+    <a class="nav-link" routerLink="/schedules">Schedules</a>
+    <a class="nav-link" routerLink="/feedback">Feedback</a>
+    <a class="nav-link" routerLink="/contactUs">Contact Us</a>
+
+    <a class="nav-link" routerLink="/aboutUs">About Us</a>
+    <a class="nav-link" routerLink="/login">Login</a>
+    <a class="nav-link" routerLink="/signUp">SignUp</a>
+  </nav>
+</div>
+
+
+<router-outlet></router-outlet>
+  

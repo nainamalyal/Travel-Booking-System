@@ -1,0 +1,80 @@
+body {
+  position: absolute;
+margin: 0;
+padding: 0;
+
+}
+img{
+margin: auto;
+width: 100%;
+height: auto;
+border: 1px solid rgb(98, 91, 91);
+border-radius: 20px;
+}
+
+.discount{
+width: 40%;
+height: 10%;
+}
+.homepage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #383636;
+  text-align: center;
+  background-image: url('/assets/home.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+.rotator {
+margin-left: 50%;
+margin-top: 0.1%;
+padding: 2rem;
+border-radius: 5px;
+}
+
+.rotator h2 {
+font-size: 36px;
+font-weight: bold;
+margin-bottom: 1rem;
+}
+
+.rotator p {
+font-size: 24px;
+margin-bottom: 2rem;
+}
+
+.service {
+margin-bottom: 2rem;
+}
+
+.service h3 {
+font-size: 28px;
+font-weight: bold;
+margin-bottom: 0.5rem;
+}
+
+.service p {
+font-size: 20px;
+}
+@media (max-width: 768px) {
+.rotator h2 {
+  font-size: 28px;
+}
+.rotator p {
+  font-size: 20px;
+}
+.service h3 {
+  font-size: 24px;
+}
+.service p {
+  font-size: 18px;
+}
+}

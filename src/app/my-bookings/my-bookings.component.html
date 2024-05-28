@@ -1,0 +1,12 @@
+<body>
+  
+  <div class="my-bookings">
+    <h2>My Bookings</h2>
+    <div *ngFor="let ticket of bookedTickets" class="booking-item">
+      <div>Type: {{ ticket.type }}</div>
+      <div>Details: {{ ticket.details }}</div>
+      <button (click)="cancelTicket(ticket)">Cancel</button>
+    </div>
+  </div>
+</body>
+  

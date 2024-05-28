@@ -1,0 +1,32 @@
+<div class="whole">
+  <div class="schedule-container">
+    <h1>Schedule</h1>
+
+    <!-- Filter Section -->
+    <div class="filters">
+      <label>Date:</label>
+      <input type="date" [(ngModel)]="filterDate">
+
+      <label>Time:</label>
+      <input type="time" [(ngModel)]="filterTime">
+
+      <label>From City:</label>
+      <input type="text" [(ngModel)]="filterFromCity">
+
+      <label>To City:</label>
+      <input type="text" [(ngModel)]="filterToCity">
+
+      <button (click)="applyFilters()">Apply Filters</button>
+    </div>
+
+    <!-- Schedule List -->
+    <div class="schedule-list">
+      <div *ngFor="let scheduleItem of filteredSchedule">
+        <h3>{{ scheduleItem.title }}</h3>
+        <p>Date: {{ scheduleItem.date }}, Time: {{ scheduleItem.time }}</p>
+        <p>From: {{ scheduleItem.fromCity }}, To: {{ scheduleItem.toCity }}</p>
+        <button (click)="bookTicket(scheduleItem)">Book Ticket</button>
+      </div>
+    </div>
+  </div>
+</div>

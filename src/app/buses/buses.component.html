@@ -1,0 +1,60 @@
+<div class="whole">
+  <div class="bus-booking-form">
+    <h2>Book a Bus Ticket</h2>
+    <form (ngSubmit)="bookTicket()" [formGroup]="busForm">
+      <div class="form-group">
+        <label for="dateTime">Date & Time:</label>
+        <input type="datetime-local" id="dateTime" class="form-control" required formControlName="dateTime">
+      </div>
+      <div class="form-group">
+        <label for="travelFrom">Travel From:</label>
+        <select id="travelFrom" class="form-control" required formControlName="travelFrom">
+          <option value="">Select</option>
+          <option value="city1">City 1</option>
+          <option value="city2">City 2</option>
+          <option value="city3">City 3</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="travelTo">Travel To:</label>
+        <select id="travelTo" class="form-control" required formControlName="travelTo">
+          <option value="">Select</option>
+          <option value="city1">City 1</option>
+          <option value="city2">City 2</option>
+          <option value="city3">City 3</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="preferredSeat">Preferred Seat:</label>
+        <select id="preferredSeat" formControlName="preferredSeat" class="form-control" required>
+          <option value="">Select Preferred Seat</option>
+          <option value="Window">Window</option>
+          <option value="Side">Side</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" class="form-control" required formControlName="name">
+      </div>
+      <div class="form-group">
+        <label for="age">Your Age:</label>
+        <input type="number" id="age" class="form-control" required formControlName="age">
+      </div>
+      <div class="form-group">
+        <label for="mobileNumber">Your Mobile Number:</label>
+        <input type="tel" id="mobileNumber" class="form-control" required formControlName="mobileNumber">
+      </div>
+      <div class="form-group">
+        <label for="paymentMethod">Payment Method:</label>
+        <select id="paymentMethod" class="form-control" required formControlName="paymentMethod">
+          <option value="">Select</option>
+          <option value="Net Banking">Net Banking</option>
+          <option value="QR Code"> QR Code</option>
+          <option value="UPI">UPI Payment</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Book Ticket</button>
+    </form>
+  </div>
+</div>
